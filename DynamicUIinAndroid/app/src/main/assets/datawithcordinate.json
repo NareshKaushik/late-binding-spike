@@ -1,0 +1,178 @@
+{
+  "layout":[
+    {
+    "height":"wrap_content",
+    "width":"wrap_content",
+    "id": "100",
+    "textColor":"#000000",
+    "label":"Enter Eamil Id",
+    "background":"#ffffff",
+    "type":"textview",
+    "connects":[{
+      "startId":"100",
+      "startSide":"left",
+      "endId":"parentid",
+      "endSide":"left",
+      "margin": "50"
+    },
+      {
+        "startId":"100",
+        "startSide":"top",
+        "endId":"parentid",
+        "endSide":"top",
+         "margin": "50"
+      }
+
+    ]
+
+  },
+    {
+      "height":"wrap_content",
+      "width":"match_constraint",
+      "id": "200",
+      "label":"Your Email Id",
+      "textColor":"#000000",
+      "background":"#ffffff",
+      "type":"edittext",
+      "connects":[{
+        "startId":"200",
+        "startSide":"left",
+        "endId":"parentid",
+        "endSide":"left",
+        "margin":"50"
+      },
+        {
+          "startId":"200",
+          "startSide":"top",
+          "endId":"100",
+          "endSide":"bottom",
+          "margin":"50"
+        },
+        {
+          "startId":"200",
+          "startSide":"right",
+          "endId":"parentid",
+          "endSide":"right",
+          "margin":"50"
+        }
+
+
+      ]
+
+    },
+    {
+      "height":"wrap_content",
+      "width":"wrap_content",
+      "id": "300",
+      "textColor":"#000000",
+      "label":"Enter Password",
+      "background":"#ffffff",
+      "type":"textview",
+      "connects":[{
+        "startId":"300",
+        "startSide":"left",
+        "endId":"parentid",
+        "endSide":"left",
+        "margin": "50"
+      },
+        {
+          "startId":"300",
+          "startSide":"top",
+          "endId":"200",
+          "endSide":"bottom",
+          "margin": "50"
+        }
+
+      ]
+
+    },
+    {
+      "height":"wrap_content",
+      "width":"match_constraint",
+      "id": "400",
+      "label":"Your Password",
+      "textColor":"#000000",
+      "background":"#ffffff",
+      "type":"edittext",
+      "connects":[{
+        "startId":"400",
+        "startSide":"left",
+        "endId":"parentid",
+        "endSide":"left",
+        "margin":"50"
+      },
+        {
+          "startId":"400",
+          "startSide":"top",
+          "endId":"300",
+          "endSide":"bottom",
+          "margin":"50"
+        },
+        {
+          "startId":"400",
+          "startSide":"right",
+          "endId":"parentid",
+          "endSide":"right",
+          "margin":"50"
+        }
+
+
+      ]
+
+    },
+    {
+      "height":"wrap_content",
+      "width":"wrap_content",
+      "id": "500",
+      "label":"Login",
+      "textColor":"#000000",
+      "background":"#ffffff",
+      "type":"button",
+      "connects":[{
+        "startId":"500",
+        "startSide":"left",
+        "endId":"parentid",
+        "endSide":"left",
+        "margin":"50"
+      },
+        {
+          "startId":"500",
+          "startSide":"top",
+          "endId":"400",
+          "endSide":"bottom",
+          "margin":"50"
+        }
+
+
+      ]
+
+    },
+    {
+      "height":"wrap_content",
+      "width":"wrap_content",
+      "id": "600",
+      "label":"Reset",
+      "textColor":"#000000",
+      "background":"#ffffff",
+      "type":"button",
+      "connects":[{
+        "startId":"600",
+        "startSide":"top",
+        "endId":"400",
+        "endSide":"bottom",
+        "margin":"50"
+      },
+        {
+          "startId":"600",
+          "startSide":"right",
+          "endId":"parentid",
+          "endSide":"right",
+          "margin":"50"
+        }
+
+
+      ]
+
+    }
+   ]
+}

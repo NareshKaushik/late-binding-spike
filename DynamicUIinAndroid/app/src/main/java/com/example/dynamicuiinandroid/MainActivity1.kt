@@ -17,14 +17,14 @@ class MainActivity1 : AppCompatActivity() {
         val context = this
         val set = ConstraintSet()
 
-        val emailLabel = DEPTextView(context, 100,"Enter Eamil",Color.BLACK,set)
-        val emailEditText = DEPEditText(context,200,"Email",Color.BLACK)
+        val emailLabel = DEPTextView(context, 100, "Enter Eamil", Color.BLACK)
+        val emailEditText = DEPEditText(context, 200, "Email", Color.BLACK)
 
-        val passwordLabel = DEPTextView(context, 400,"Enter Password",Color.BLACK)
-        val passwordEditText = DEPEditText(context,300,"Password",Color.BLACK)
+        val passwordLabel = DEPTextView(context, 400, "Enter Password", Color.BLACK)
+        val passwordEditText = DEPEditText(context, 300, "Password", Color.BLACK)
 
-        val loginButton = DEPButton(context,500,"Login",Color.BLACK,Color.GREEN)
-        val resetButton = DEPButton(context,600,"Reset",Color.BLACK,Color.RED)
+        val loginButton = DEPButton(context, 500, "Login", Color.BLACK, Color.GREEN)
+        val resetButton = DEPButton(context, 600, "Reset", Color.BLACK, Color.RED)
 
         val root = ConstraintLayout(context)
         root.addView(emailLabel)

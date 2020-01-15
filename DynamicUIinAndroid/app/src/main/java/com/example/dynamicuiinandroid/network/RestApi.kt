@@ -1,7 +1,6 @@
 package com.example.latebindingspike
 
 import com.example.dynamicuiinandroid.customviews.model.Response
-import com.google.gson.JsonObject
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

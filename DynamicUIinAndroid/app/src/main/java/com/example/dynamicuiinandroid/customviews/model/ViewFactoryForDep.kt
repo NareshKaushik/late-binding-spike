@@ -9,23 +9,22 @@ import com.example.dynamicuiinandroid.customviews.DEPTextView
 
 
 object ViewFactoryForDep {
-    fun getViewFrom(context: Context,layoutItem: LayoutItem): View {
+    fun getViewFrom(context: Context, layoutItem: LayoutItem): View {
         when (layoutItem.type) {
             "edittext" -> {
-                val field = DEPEditText(context,layoutItem.id!!.toInt(),layoutItem!!.label!!)
+                val field = DEPEditText(context, layoutItem.id!!.toInt(), layoutItem!!.label!!)
                 return field
             };
-            "textview"->
-            {
-                val textField = DEPTextView(context,layoutItem.id!!.toInt(),layoutItem!!.label!!)
+            "textview" -> {
+                val textField = DEPTextView(context, layoutItem.id!!.toInt(), layoutItem!!.label!!)
                 return textField
             }
-            "imageview"->{
-                val imageView = DEPImageView(context,layoutItem.id!!.toInt())
+            "imageview" -> {
+                val imageView = DEPImageView(context, layoutItem.id!!.toInt())
                 return imageView
             }
-            else->{
-                val button = DEPButton(context,layoutItem.id!!.toInt(),layoutItem!!.label!!)
+            else -> {
+                val button = DEPButton(context, layoutItem.id!!.toInt(), layoutItem!!.label!!)
                 return button
             }
         }

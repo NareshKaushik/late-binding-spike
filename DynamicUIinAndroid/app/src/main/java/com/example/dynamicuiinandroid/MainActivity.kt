@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         passwordEditText.id = 300
         passwordLabel.id = 400
         loginButton.id = 500
-        resetButton.id=600
+        resetButton.id = 600
         passwordLabel.text = "Password"
         emailLabel.text = "Email Id"
         val root = ConstraintLayout(context)
