@@ -18,7 +18,7 @@ import com.example.latebindingspike.MainViewModel
 
 class UIFromJsonWithCordinates : AppCompatActivity() {
 
-    lateinit var progressBar: ProgressBar
+    lateinit var progressBar: View
     lateinit var set: ConstraintSet
     lateinit var root: ConstraintLayout
 
@@ -37,26 +37,8 @@ class UIFromJsonWithCordinates : AppCompatActivity() {
     }
 
     private fun addProgressBar() {
-        progressBar = ProgressBar(this, null, android.R.attr.progressBarStyleSmall)
-        progressBar.layoutParams = ConstraintLayout.LayoutParams(200, 200)
-
-        progressBar.id = View.generateViewId()
-        set.connect(progressBar.id, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP)
-        set.connect(
-            progressBar.id,
-            ConstraintSet.BOTTOM,
-            ConstraintSet.PARENT_ID,
-            ConstraintSet.BOTTOM
-        )
-        set.connect(progressBar.id, ConstraintSet.LEFT, ConstraintSet.PARENT_ID, ConstraintSet.LEFT)
-        set.connect(
-            progressBar.id,
-            ConstraintSet.RIGHT,
-            ConstraintSet.PARENT_ID,
-            ConstraintSet.RIGHT
-        )
+        progressBar = layoutInflater.inflate(R.layout.view_loading,root,false)
         root.addView(progressBar)
-        set.applyTo(root)
     }
 
     private fun addViews(model: Response) {

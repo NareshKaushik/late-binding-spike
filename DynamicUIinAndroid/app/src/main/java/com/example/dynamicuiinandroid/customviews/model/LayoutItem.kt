@@ -30,7 +30,7 @@ data class LayoutItem(
     @field:SerializedName("height")
     val height: String? = null,
 
-    @field:SerializedName("visiblity")
+    @field:SerializedName("visibility")
     val visiblity: String? = null,
 
     @field:SerializedName("isEnabled")
